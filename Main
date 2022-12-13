@@ -1,30 +1,55 @@
 <script>
 
-    function saltarlinea(){
+  function saltarlinea(){
 
-        document.write("<br")
-        document.write("<br")
-        document.write("<br")
+    document.write("<br")
+    document.write("<br")
+    document.write("<br")
+  }
+
+ function imprimir(frase){
+
+    document.write(frase)
+    saltarlinea()
+
+ }
+
+ function imc (peso, altura){
+
+  return (peso/(altura*altura))
+
+
+ }
+
+   nombre = prompt("Digite su nombre")
+   peso_informado= prompt(nombre + ", Informe su peso")
+   altura_informado= prompt(nombre + ", Informe su altura")
+   imc_calc=imc(peso_informado,altura_informado)
+   
+   
+
+   if (imc_calc <=24.9){
+        imprimir(nombre + ", su IMC calculado es " + imc_calc + " El paciente tiene Peso Optimo")
+
+    }if(imc_calc == 25 || imc_calc <= 29.9){
+        imprimir(nombre + ", su IMC calculado es " + imc_calc  + " El paciente tiene Sobrepeso")
+        
+
+    }if(imc_calc ==30 || imc_calc <= 34.5){
+
+        imprimir(nombre + ", su IMC calculado es " + imc_calc  + " El paciente tiene Obesidad I")
+
+
+    } if( imc_calc == 35|| imc_calc <= 39.9){
+
+        imprimir(nombre + ", su IMC calculado es " + imc_calc  + " El paciente tiene Obesidad II")
+
+    } if(imc_calc > 40 ){
+
+        imprimir(nombre + ", su IMC calculado es " + imc_calc  + " El paciente tiene Obesidad III")
+
     }
 
-    function imprimir(frase){
-
-        document.write(frase)
-        saltarlinea()
-
-    }
-
-    var anomundial=1930
-    var limite=parseInt(prompt("Ingrese el limite para calcular "))
-
-
-    while (anomundial <= limite){
-
-        imprimir("Hubo mundial de FIFA en el año " + anomundial)
-        anomundial = anomundial + 4
     
-    }
-    imprimir("fin")
-
 
 </script>
