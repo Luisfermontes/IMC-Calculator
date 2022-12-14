@@ -1,0 +1,38 @@
+
+<H3>ESTRELLAS</H3>
+
+<script>
+
+function saltodelinea(){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+
+    function imprimir(frase){
+
+        document.write(frase)
+        saltodelinea()
+    }
+
+
+    for(var lineas=1; lineas <=10; lineas++){
+
+        for(var columnas = 1; columnas<=10; columnas++){
+
+          document.write("*")
+        }
+
+        saltodelinea()
+
+
+        
+    }
+
+    saltodelinea()
+    saltodelinea()
+
+    imprimir("fin")
+
+
+</script>
