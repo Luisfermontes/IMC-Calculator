@@ -1,0 +1,45 @@
+
+
+<h3> Tabla de Multiplicar </h3>
+<script>
+    function saltodelinea(){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+
+    function imprimir(frase){
+
+        document.write(frase)
+        saltodelinea()
+    }
+
+    var multiplicador =1
+    var limite
+
+    //limite=parseInt(prompt("Digita límite" ))
+    //num_tabla=parseInt(prompt("Digita el número al que desea calcular la tabla " ))
+
+    //while(multiplicador <= limite){
+
+        //imprimir(num_tabla* multiplicador)
+    //multiplicador=multiplicador+1
+
+    //}
+
+    imprimir("FOR")
+
+    for(var multiplicador =1 ; multiplicador <= 10; multiplicador=multiplicador+1){
+            
+        imprimir(5*multiplicador)
+
+    }
+
+  
+
+   
+
+
+
+
+</script>
