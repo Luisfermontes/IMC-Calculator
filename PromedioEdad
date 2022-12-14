@@ -1,0 +1,38 @@
+
+<script>
+
+function saltodelinea(){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+
+    function imprimir(frase){
+
+        document.write(frase)
+        saltodelinea()
+    }
+
+    var numerodemiembros= parseInt(prompt("Ingrese la cantidad de miembros de su familia"))
+    var contador =1
+    var totaledades=0
+
+    while(contador<=numerodemiembros){
+
+        edad=parseInt(prompt("Ingrese la edad del familiar"))
+        totaledades=totaledades+edad
+        contador++
+
+
+    }
+
+    prom=totaledades/numerodemiembros
+    imprimir(totaledades)
+    imprimir("El promedio de edades de la familia es " + prom)
+
+    
+
+
+
+
+</script>
