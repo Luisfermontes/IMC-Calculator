@@ -1,0 +1,46 @@
+<html>
+
+<h5>JUEGO DE ADIVINANZAS</h5>
+
+<script>
+
+    function saltodelinea(){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+
+    function imprimir(frase){
+
+        document.write(frase)
+        saltodelinea()
+    }
+
+    var numeropensado = Math.round(Math.random()*10)
+    var numerolanzado=parseInt(prompt("Ingres un número entre 0 - 10"))
+
+    if (numeropensado==numerolanzado){
+
+        imprimir("Usted acertó ")
+    
+    }
+    
+    if(numeropensado != numerolanzado){
+
+        imprimir("Usted erró el número pensado era "+ numeropensado)
+
+
+        
+
+
+     }
+
+
+
+
+
+</script>
+
+
+
+</html>
