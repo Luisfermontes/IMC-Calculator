@@ -1,0 +1,31 @@
+
+<script>
+    function saltodelinea(){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+
+    function imprimir(frase){
+
+        document.write(frase)
+        saltodelinea()
+    }
+
+    var ahnomundial= 1930
+    var limite =  parseInt(prompt("Ingrese el año limite para calcular "))
+
+    
+    while(ahnomundial<=limite){
+
+      
+      imprimir("hubo mundial de la FIFA en el año " + ahnomundial)
+      ahnomundial=ahnomundial+4
+    }
+
+   
+
+
+
+
+</script>
